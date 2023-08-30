@@ -143,6 +143,4 @@ SIMPLE_JWT = {
     'TOKEN_TYPE_CLAIM': 'token_type',
 }
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000"
-]
+CORS_ALLOWED_ORIGINS = [*]
