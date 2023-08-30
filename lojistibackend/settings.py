@@ -149,5 +149,9 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://lojisti.com",
+    "https://www.lojisti.com",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://www.lojisti.com",
 ]
