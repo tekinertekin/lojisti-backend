@@ -3,9 +3,6 @@ from users.models import LojistiUser
 
 
 class CustomUserSerializer(serializers.ModelSerializer):
-    """
-    Currently unused in preference of the below.
-    """
     email = serializers.EmailField(required=True)
     user_name = serializers.CharField(required=True)
     password = serializers.CharField(min_length=8, write_only=True)
