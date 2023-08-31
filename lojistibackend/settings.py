@@ -15,14 +15,7 @@ SECRET_KEY = 'django-insecure-$*#u2q01yl(q_5cborc_r7$4-inhxm$le%r^bmc*r=ttu8y+3b
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CORS_ALLOWED_ORIGINS = [
-    "https://lojisti.com",
-    "https://www.lojisti.com",
-]
-CSRF_TRUSTED_ORIGINS = [
-    "https://lojisti.com",
-    "https://www.lojisti.com",
-]
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Application definition
@@ -50,9 +43,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -152,7 +145,3 @@ SIMPLE_JWT = {
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
     'TOKEN_TYPE_CLAIM': 'token_type',
 }
-
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SECURE_SSL_REDIRECT = True
