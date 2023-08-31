@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-$*#u2q01yl(q_5cborc_r7$4-inhxm$le%r^bmc*r=ttu8y+3b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*',]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -163,4 +163,6 @@ CORS_ALLOW_HEADERS = (
     "sentry-trace",
 )
 
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
