@@ -162,3 +162,5 @@ CORS_ALLOW_HEADERS = (
     "x-requested-with",
     "sentry-trace",
 )
+
+SECURE_SSL_REDIRECT = True
