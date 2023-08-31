@@ -15,7 +15,10 @@ SECRET_KEY = 'django-insecure-$*#u2q01yl(q_5cborc_r7$4-inhxm$le%r^bmc*r=ttu8y+3b
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOWED_ORIGINS = [
+    "https://lojisti.com",
+    "https://www.lojisti.com",
+]
 
 
 # Application definition
@@ -165,3 +168,8 @@ CORS_ALLOW_HEADERS = (
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
+
+CORS_ALLOWED_ORIGINS = [
+    "https://lojisti.com",
+    "https://www.lojisti.com",
+]
