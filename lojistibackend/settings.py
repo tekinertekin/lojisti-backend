@@ -15,6 +15,7 @@ SECRET_KEY = 'django-insecure-$*#u2q01yl(q_5cborc_r7$4-inhxm$le%r^bmc*r=ttu8y+3b
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Application definition
@@ -146,8 +147,6 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOW_METHODS = ("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
-
-CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_HEADERS = (
